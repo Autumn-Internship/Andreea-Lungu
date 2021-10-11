@@ -1,0 +1,7 @@
+@import "./theme.css";
+
+.footer{
+    text-align: center;
+    background-color: var(--main-color);
+    padding:20px;
+}

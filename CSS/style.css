@@ -1,0 +1,75 @@
+@import "./theme.css";
+@import "./footer.css";
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+}
+
+
+header{  
+  background-color: var(--main-color);
+  padding: 20px;
+  text-align: center;
+}
+
+img{
+    height: 150px;
+    display: absolute;
+    top:0;
+}
+
+h3{
+    color:var(--text-color);
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 50px;
+    padding: 50px 25px;
+}
+
+.question{
+
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background: rgb(218,155,47, 0.6);
+    padding: 20px;
+}
+.question:hover{
+    background: rgb(218,155,47, 1);
+}
+
+.buttons{
+    display: block;
+    padding: 30px;
+    text-align: center;
+
+}
+
+
+
+@media only screen and (max-width:1024px){
+    .form{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (max-width:768px){
+    .form{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+@media only screen and (max-width:480px){
+    header{
+        width: 100%;
+    }
+    .form{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    }
+}

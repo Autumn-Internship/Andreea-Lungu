@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Squid Game Form</title>
+</head>
+<header>
+    <h1>Squid Game Quiz</h1>
+    <h2>How much of a fan are you?</h2>
+    <img src="mask.png" alt="Squid Game"> 
+</header>
+<body>
+    <main>
+        <form action="#" method="POST" class="form">
+     
+                <div class="question">
+                    <h3>What color were the guards' jumpsuits?</h3>
+                    <label for="pick-color">Select the color:</label>
+                    <input type="color" id="pick-color" value="#ffffff" />
+                </div>    
+
+                <div class="question">
+                    <h3>Which was the phone number on the card?</h3>
+                    <label for="phone-number" >Enter the phone number:</label>
+                    <input type="tel" id="phone-number" pattern="[0-9]{4}-[0-9]{4}" required/>
+                    <p>Input example: 5555-4444</p>
+                </div>
+
+                <div class="question">
+                    <h3>What type of racing did Seong Gi like?</h3>
+                    <label>Select a type:</label>
+                    <select>
+                        <option value="dog">Dog Racing</option>
+                        <option value="hourse">Hourse Racing</option>
+                        <option value="car">Car Racing</option>
+                        <option value="cow">Cow Racing</option>
+                    </select>
+                </div>
+                
+                <div class="question">
+                    <h3>Which games did you like? </h3>
+                    <input type="checkbox" name="games" id="Red-green">
+                    <label for="Red-green">Red Green</label>
+                    <input type="checkbox" name="games" id="honeycomb">
+                    <label for="honeycomb">Honeycomb Candy</label>
+                    <input type="checkbox" name="games" id="Marbles">
+                    <label for="Marbles">Marbles</label>
+                    <input type="checkbox" name="games" id="Stone Bridge">
+                    <label for="Stone Bridge">Stone Bridge</label>
+                    <input type="checkbox" name="games" id="Tug of war">
+                    <label for="Tug of war">Tug of War</label>
+                    <input type="checkbox" name="games" id="Squid Game">
+                    <label for="Squid Game">Squid Game</label>
+                </div>
+
+                <div class="question">
+                    <h3>Which was your favorite character from Squid Game? Why?</h3>
+                    <textarea cols="50" rows="5" spellcheck="true"></textarea>
+                </div>
+
+                <div class="question">
+                    <h3>On a scale of 1 to 10, how much did you like the TV show?</h3> 	
+                    <label for="scale">Select:</label>
+                    <input type="range" min="0" max="10">
+                 </div>
+
+                <div class="question">
+                    <h3>Would you recommend this serial to your friends?</h3>
+                    <input type="radio" name="recommend" value="yes" checked>
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="recommend" value="no">
+                    <label for="no">No</label>
+                </div>    
+                
+                <div class="buttons">
+                    <input type="submit" value="Submit Form">
+                    <input type="reset" value="Reset Form">
+                </div>
+        </form> 
+        
+    </main>
+
+    <footer class="footer">
+        <p> &copy Copyright 2021 | All rights reserved</p>
+    </footer>
+    
+</body>
+</html>
