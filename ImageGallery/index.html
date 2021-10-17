@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <div class="gallery">
+        <header>
+            <h1>Stages of <span>EC_SPECIAL</span></h1>
+        </header>
+        
+        <div class="stages" id="stages">
+            <img src="image/boohaMansion.jpg" alt="Booha Mansion Stage" >
+            <img src="image/danceGarden.jpg" alt="Dance Garden Stage">
+            <img src="image/beachStage.jpg" alt="Beach Stage">
+            <img src="image/hideout.jpg" alt= "Hideout Stage">
+            <img src="image/shizzleBass.jpg" alt="Shizzle Bass Stage">
+        </div>
+
+        <div class="main-photo">
+            <img src="image/bontida.jpg" id="mainPhoto">
+        </div>
+    </div>
+
+    <script>
+        stages.addEventListener('click', function (event) {
+          mainPhoto.src=event.target.src;
+        });
+      </script>
+</body>
+</html>
